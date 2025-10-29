@@ -1,6 +1,6 @@
 (function () {
     const STORAGE_KEY = 'lt_visitors_count';
-    const baseCount = 4230;
+    const baseCount = 230;
     const minInc = 1;
     const maxInc = 5;
     const visitorEl = document.getElementById('visitorCount');
