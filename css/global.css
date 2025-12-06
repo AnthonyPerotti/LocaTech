@@ -1,0 +1,47 @@
+:root{
+  --bg:#f5f7fa;
+  --accent:#005BEA;
+  --accent2:#00C6FB;
+  --cta:#FFD43B;
+  --muted:#6b7280;
+  --card:#fff;
+  --glass: rgba(255,255,255,0.8);
+  --radius:12px;
+  --maxw:1100px;
+}
+
+/* Reset básico */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:'Poppins',sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* Buttons */
+.btn-primary{
+  background: linear-gradient(135deg,var(--accent),var(--accent2));
+  color:white;
+  padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:600;
+  display:inline-block;
+}
+.btn-ghost{
+  background:transparent;border:2px solid rgba(0,0,0,0.06);padding:10px 20px;border-radius:10px;margin-left:10px;
+}
+.btn-small{background:transparent;border:1px solid rgba(255,255,255,0.18);padding:8px 10px;border-radius:8px;color:white}
+
+/* Section titles */
+.section{padding:64px 0}
+.section.alt{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.95))}
+
+/* Responsividade simples */
+@media (max-width:800px){
+  .hero-content h1{font-size:1.7rem}
+  .container{padding:0 16px}
+}

@@ -1,93 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LocaTech</title>
   <link rel="icon" type="image/png" href="img/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
-
 <body>
-  <header>
-    <img src="img/logo.png" alt="Logo LocaTech" />
-    <div class="hero">
+  <!-- NAVBAR FIXA -->
+  <nav class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="img/logo.png" alt="LocaTech logo" class="logo">
+      </div>
+      <ul class="navlinks">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#por-que">Por que usar</a></li>
+        <li><a href="#lead">Quero testar</a></li>
+        <li><button id="darkToggle" class="btn-small">Modo</button></li>
+      </ul>
+      <div class="visitor-counter">
+        <span>Visitantes</span>
+        <div id="visitorCount">0</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-hero">
+    <div class="hero-content container">
       <h1>A tecnologia que você precisa, quando você precisa</h1>
       <p>Alugue notebooks, projetores e câmeras por um preço acessível — sem burocracia, pensado para estudantes.</p>
-      <a href="#lead">Quero alugar agora</a>
-    </div>
-    <div class="visitor-counter">
-      <div>Visitantes</div>
-      <div id="visitorCount">0</div>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#lead">Quero alugar agora</a>
+        <a class="btn-ghost" href="#como-funciona">Como funciona</a>
+      </div>
     </div>
   </header>
 
-  <section id="como-funciona">
-    <h2>Como Funciona</h2>
-    <div class="steps">
-      <div class="card">
-        <h3>1️⃣ Escolha o equipamento</h3>
-        <p>Notebooks, projetores, câmeras e mais.</p>
-      </div>
-      <div class="card">
-        <h3>2️⃣ Reserve e retire</h3>
-        <p>Receba na faculdade ou em casa com praticidade.</p>
-      </div>
-      <div class="card">
-        <h3>3️⃣ Use e devolva</h3>
-        <p>Sem burocracia, com suporte garantido.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="por-que">
-    <h2>Por que usar a LocaTech?</h2>
-    <div class="benefits">
-      <div class="card">
-        <h3>💸 Economize</h3>
-        <p>Pague apenas pelo tempo de uso.</p>
-      </div>
-      <div class="card">
-        <h3>⚡ Acesso rápido</h3>
-        <p>Equipamentos prontos para uso imediato.</p>
-      </div>
-      <div class="card">
-        <h3>🧠 Pensado para estudantes</h3>
-        <p>Condições e preços acessíveis.</p>
-      </div>
-      <div class="card">
-        <h3>🧰 Variedade</h3>
-        <p>Notebooks, projetores, câmeras e microfones.</p>
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <h2>Como Funciona</h2>
+      <div class="steps">
+        <article class="card">
+          <h3>1️⃣ Escolha o equipamento</h3>
+          <p>Notebooks, projetores, câmeras e mais.</p>
+        </article>
+        <article class="card">
+          <h3>2️⃣ Reserve e retire</h3>
+          <p>Receba na faculdade ou em casa com praticidade.</p>
+        </article>
+        <article class="card">
+          <h3>3️⃣ Use e devolva</h3>
+          <p>Sem burocracia, com suporte garantido.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2>O que nossos usuários dizem</h2>
-    <blockquote>“Usei um notebook da LocaTech para meu TCC e foi perfeito! Consegui apresentar sem travar o bolso 😅.” —
-      <b>Mariana, Engenharia</b></blockquote>
-    <blockquote>“Poder alugar um projetor para a semana de apresentações foi a salvação.” — <b>Lucas, Design</b>
-    </blockquote>
+  <!-- POR QUE -->
+  <section id="por-que" class="section alt">
+    <div class="container">
+      <h2>Por que usar a LocaTech?</h2>
+      <div class="benefits">
+        <article class="card">
+          <h3>💸 Economize</h3>
+          <p>Pague apenas pelo tempo de uso.</p>
+        </article>
+        <article class="card">
+          <h3>⚡ Acesso rápido</h3>
+          <p>Equipamentos prontos para uso imediato.</p>
+        </article>
+        <article class="card">
+          <h3>🧠 Pensado para estudantes</h3>
+          <p>Condições e preços acessíveis.</p>
+        </article>
+        <article class="card">
+          <h3>🧰 Variedade</h3>
+          <p>Notebooks, projetores, câmeras e microfones.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section id="lead">
-    <h2>Cadastre-se para ser o primeiro a testar!</h2>
-    <div class="lead-form">
-      <p>Deixe seu contato e seja avisado quando a LocaTech chegar na sua universidade.</p>
-      <input type="text" placeholder="Seu nome" required><br>
-      <input type="email" placeholder="Seu e-mail" required><br>
-      <input type="text" placeholder="Sua universidade" required><br>
-      <button>Quero participar</button>
+  <!-- DEPOIMENTOS -->
+  <section class="section">
+    <div class="container testimonials">
+      <h2>O que nossos usuários dizem</h2>
+      <blockquote>“Usei um notebook da LocaTech para meu TCC e foi perfeito! Consegui apresentar sem travar o bolso 😅.” — <b>Mariana, Engenharia</b></blockquote>
+      <blockquote>“Poder alugar um projetor para a semana de apresentações foi a salvação.” — <b>Lucas, Design</b></blockquote>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section id="lead" class="section alt">
+    <div class="container">
+      <h2>Cadastre-se para ser o primeiro a testar!</h2>
+      <div class="lead-form">
+        <!-- Se quiser enviar para Google Forms / Sheets, insira action no form -->
+        <form id="leadForm">
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+          <input type="text" id="university" name="university" placeholder="Sua universidade" required>
+          <div class="form-row">
+            <button type="submit" class="btn-primary">Quero participar</button>
+            <button type="button" id="demoBtn" class="btn-ghost">Solicitar demo</button>
+          </div>
+        </form>
+        <div id="formMsg" class="form-msg" aria-live="polite"></div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>LocaTech © 2025 – Todos os direitos reservados.<br>Contato: contato@locatech.com.br</p>
+    <div class="container">
+      <p>LocaTech © 2025 – Todos os direitos reservados. Contato: contato@locatech.com.br</p>
+    </div>
   </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a class="whatsapp-fab" id="waFab" href="https://wa.me/551199999999?text=Ol%C3%A1%2C%20quero%20informacoes%20sobre%20a%20LocaTech" target="_blank" rel="noopener">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
 
   <script src="js/script.js"></script>
 </body>
-
 </html>

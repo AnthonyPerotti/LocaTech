@@ -1,0 +1,19 @@
+/* Topbar fixa */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:120;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(135deg, rgba(0,91,234,0.95), rgba(0,198,251,0.95));
+  box-shadow:0 6px 24px rgba(0,0,0,0.12);
+}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{height:72px;border-radius:10px}
+.navlinks{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:12px}
+.navlinks a{color:#fff;text-decoration:none;font-weight:600}
+.visitor-counter{color:#fff;text-align:right;font-size:12px}
+#visitorCount{font-weight:700;font-size:16px;margin-top:2px}
+
+/* Hero top spacing to compensate fixed nav */
+.hero-hero{padding-top:120px;padding-bottom:60px}
+.hero-content h1{font-size:2.6rem;margin:0 0 10px}
+.hero-content p{font-size:1.15rem;opacity:0.95}
+.hero-ctas{margin-top:18px;display:flex;gap:10px;align-items:center;justify-content:center}

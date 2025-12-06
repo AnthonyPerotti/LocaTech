@@ -1,0 +1,7 @@
+footer{background:#0b1220;color:#d1d5db;padding:36px 0;text-align:center;margin-top:40px}
+footer p{margin:0;font-size:0.95rem}
+.whatsapp-fab{
+  position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(135deg,#25D366,#128C7E);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(0,0,0,0.18);z-index:140;
+}
+.whatsapp-fab img{width:28px;height:28px;filter:brightness(1.05) contrast(1)}

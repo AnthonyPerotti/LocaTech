@@ -1,0 +1,23 @@
+/* Cards e grids */
+.steps, .benefits{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:28px;
+  align-items:stretch;
+}
+
+.card{
+  background:var(--card);
+  padding:28px;
+  border-radius:var(--radius);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+  border:1px solid rgba(14, 39, 103, 0.03);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 50px rgba(2,6,23,0.08)}
+.card h3{margin:0 0 10px;color:var(--accent)}
+.card p{margin:0;color:var(--muted)}
+
+.testimonials blockquote{
+  background:#e9f4ff;padding:22px;border-left:6px solid var(--accent);border-radius:10px;font-style:italic;margin:18px 0;
+}
